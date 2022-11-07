@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parser": "@babel/eslint-parser",
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": ["error", {
+            "endOfLine": "auto"
+          }],
+        "react/state-in-constructor": "off",
+        "react/jsx-no-undef": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-props-no-spreading": "off",
+        "no-undef": "off",
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading":"off",
+        "linebreak-style": 0,
+        "jsx-a11y/label-has-associated-control": "off",
+        "import/prefer-default-export": "off",
+        "jsx-a11y/label-has-for":"off"
+    }
+}
